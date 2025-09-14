@@ -5,7 +5,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
    cors:{
-    origin: ["https://web-chat-app-vfne.onrender.com"],
+    origin: ["https://web-chat-app-frontend-1z7a.onrender.com"],
    } 
 });
 export function getReceiverSocketId(userId){

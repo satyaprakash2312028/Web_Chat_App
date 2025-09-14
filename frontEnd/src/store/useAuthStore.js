@@ -21,6 +21,7 @@ const authStore = create((set, get) => ({
             if(get().authUser.isVerified) get().connectSocket();
         } catch (error) {
             set({ authUser: null });
+            console.log("Error Occouring");
         } finally {
             set({ isCheckingAuth: false });
         }

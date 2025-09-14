@@ -12,7 +12,7 @@ app.use(express.json({limit: "50mb"}));
 app.use(express.urlencoded({extended: true, limit: "50mb"}));
 app.use(cookieParser());
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://web-chat-app-frontend-1z7a.onrender.com/",
     credentials: true
 }));
 app.use("/api/auth", authRoutes);
